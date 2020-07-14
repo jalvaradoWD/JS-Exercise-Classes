@@ -281,7 +281,7 @@ class ProjectManager extends Instructor {
     return `${this.name} announces to ${channel}, @channel standy times!`;
   }
 
-  debugCode(student, subject) {
+  debugsCode(student, subject) {
     return `${this.name} debugs ${student.name}'s code on ${subject}`;
   }
 }
@@ -297,7 +297,7 @@ const projectManager1 = new ProjectManager({
   favInstructor: "Sean",
 });
 
-console.log(projectManager1.debugCode(studentProfile, "JavaScript"));
+console.log(projectManager1.debugsCode(studentProfile, "JavaScript"));
 
 /*
   STRETCH PROBLEM (no tests!)
